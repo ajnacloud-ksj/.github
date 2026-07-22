@@ -1,0 +1,23 @@
+name: "Feature"
+description: "New capability or improvement"
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem — what can't be done today, and who needs it?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed behaviour"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      placeholder: "- [ ] a reviewer can check each of these"
+    validations:
+      required: true
