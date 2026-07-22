@@ -1,0 +1,3 @@
+# Every issue gets a type at creation — the forms below each apply their type label.
+# (gh CLI bypasses forms; anything untyped lands in the board's Triage view.)
+blank_issues_enabled: false
