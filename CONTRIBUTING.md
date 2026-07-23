@@ -21,10 +21,12 @@ Empty view = done.
 Merge to `develop`: dev deploys, the ticket closes, the board card moves to Done.
 Nobody updates boards or writes notes by hand, ever.
 
-## 5. Release — one button + one review
-Actions → **Cut release** → pick the app. It opens the `develop → main` promotion PR with the
-changelog in the body. **Merging that PR is the release**: prod deploys, tag is cut, categorised
-release notes generate from PR labels.
+## 5. Release — the monthly train; you only merge
+On the 1st of each month the release train automatically opens a `develop → main` promotion PR
+for every app with changes — version computed, changelog in the body. **Merging that PR (merge
+commit, never squash) is the release**: prod deploys, the tag is read from the PR title,
+categorised notes generate from PR labels, the milestone closes itself. Emergency/off-cycle:
+Actions → Cut release in ajna-app-infra, any day.
 
 ---
 Why it's built this way, and the automation behind it:
