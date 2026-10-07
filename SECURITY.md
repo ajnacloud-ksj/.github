@@ -3,10 +3,6 @@
 This policy tells security researchers how to report a vulnerability in the Ajna
 platform or in an App that runs on it. It applies with the Acceptable Use Policy (AUP).
 
-> This file is the published copy that every Ajna App's `/.well-known/security.txt` points to
-> (`Policy:` field, RFC 9116). The source is
-> `ajna-app-ui-template/docs/security/disclosure-policy.md`. Change both in the same way.
-
 ## How to report
 
 - Send the report to **security@ajna.cloud**.
@@ -30,7 +26,8 @@ If we need more time, we tell you why and agree a new date with you.
 
 ## Safe harbour
 
-We do not take legal action against you for a test that obeys all of these rules:
+AUP §3.1 says that a test of the platform needs written permission. This policy is
+that written permission for a test that obeys all of these rules:
 
 - You act in good faith.
 - You test only your own Tenant. You do not access, change or delete the data of
@@ -40,9 +37,11 @@ We do not take legal action against you for a test that obeys all of these rules
 - You stop and report immediately when you find access to data that is not yours.
 - You keep the details confidential under the 90-day rule above.
 
-A test outside these rules breaks AUP §3 ("Security and integrity of the platform").
-To get approval for a different test, send a request to security@ajna.cloud
-5 business days before the test.
+We do not take legal action against you for a test that obeys these rules.
+
+Other tests on your own Tenant, for example a load test, need approval. Send a request
+to security@ajna.cloud 5 business days before the test. An approved test can cover
+only your own Tenant. A test without permission breaks AUP §3.
 
 ## Out of scope
 
@@ -50,8 +49,3 @@ To get approval for a different test, send a request to security@ajna.cloud
 - Physical attacks.
 - Reports from automatic scanners with no proof of an effect.
 - AWS infrastructure. Report problems with AWS itself to AWS.
-
-## Status
-
-This text is a draft. A lawyer must review it before publication (launch decision
-row 72).
